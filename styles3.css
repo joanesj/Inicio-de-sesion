@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("congresos-medicos-ficha.webp");
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+.login { 
+    height:  50%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #fff;
+    box-shadow: 0 0 15px 0 #fff;
+    background: transparent;
+    border-radius: 10px;
+    color: #eee;
+    margin-top: 4px;
+    background: rgba(3, 0, 8, 0.6);
+    padding: 20px 0;
+    box-shadow: 0 0 55px 0 #0009;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login button {
+    background-color: #024;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #036;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+    }
+
+    .login {
+        max-width: 95%;
+        margin: 40px auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .login input {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .login button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 30px;
+    }
+
+    .login {
+        max-width: 80%;
+        margin: 60px auto;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .login input {
+        width: 95%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .login button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+}
+

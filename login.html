@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="icon" href="logo3.png" type="image/png">
+    <link rel="stylesheet" href="styles3.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="confirmacion.js" defer></script>
+</head>
+<body>
+    <section class="login">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" action="procesar_login.py" method="POST">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <div id="g_id_onload"
+        data-client_id="214846363884-2qmhqaphakk26e0jusvpig5k2tk3makl.apps.googleusercontent.com"
+        data-login_uri="http://localhost:3000/login" 
+        data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rect"
+        data-logo_alignment="left">
+</div>
+</body>
+</html>
